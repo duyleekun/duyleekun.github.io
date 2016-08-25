@@ -23,7 +23,7 @@ tar -zxvf *.tar.gz
 
 # Modify region restriction data
 cd wireless-regdb-2016.06.10/
-gedit nano db.txt
+gedit db.txt
 {% endhighlight %}
 
 You can check what region your card is in by plugging in the Wireless adapter and run `dmesg`. You might see this line
