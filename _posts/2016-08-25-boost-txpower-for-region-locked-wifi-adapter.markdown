@@ -18,8 +18,10 @@ apt-get install python-m2crypto libgcrypt11-dev libnl-3-dev pkg-config libnl-gen
 mkdir ~/regionhack
 cd ~/regionhack
 wget https://www.kernel.org/pub/software/network/wireless-regdb/wireless-regdb-2016.06.10.tar.gz # 10-Jun-2016 13:05
+tar -zxvf wireless-regdb-2016.06.10.tar.gz
+
 wget https://www.kernel.org/pub/software/network/crda/crda-3.18.tar.gz #30-Jan-2015 19:14
-tar -zxvf *.tar.gz
+tar -zxvf crda-3.18.tar.gz
 
 # Modify region restriction data
 cd wireless-regdb-2016.06.10/
