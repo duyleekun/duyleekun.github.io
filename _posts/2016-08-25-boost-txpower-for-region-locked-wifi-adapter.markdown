@@ -61,13 +61,14 @@ Now, run following lines. Note that in Kali, there's no `/usr/lib/crda` director
 # Build and copy new regulatory.bin to the system
 make
 cp regulatory.bin /lib/crda/regulatory.bin
+cp *.pem ~/regionhack/crda-3.18/pubkeys
 
 # Copy system default trusted keys
 cd /lib/crda/pubkeys
 cp benh@debian.org.key.pub.pem ~/regionhack/crda-3.18/pubkeys
 
 # Change default destination to `/lib/crda` (It was `/usr/lib/crda` orignally which isn't available in new Kali)
-gedit Makefile
+
 
 {% endhighlight %}
 
@@ -76,6 +77,7 @@ We've reached the final building step
 
 {% highlight bash %}
 cd ~/regionhack/crda-3.18/
+gedit Makefile
 make
 make install
 {% endhighlight %}
