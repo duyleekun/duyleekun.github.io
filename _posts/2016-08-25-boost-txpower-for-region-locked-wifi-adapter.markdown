@@ -12,7 +12,7 @@ There've been a few topics regarding above issue but some packages aren't availa
 - http://null-byte.wonderhowto.com/how-to/set-your-wi-fi-cards-tx-power-higher-than-30-dbm-0149606/
 
 {% highlight bash %}
-apt-get install python-m2crypto libgcrypt11 libgcrypt11-dev libnl-3-dev pkg-config libnl-genl-3-dev
+apt-get install python-m2crypto libgcrypt11-dev libnl-3-dev pkg-config libnl-genl-3-dev
 
 # Build working dir
 mkdir ~/regionhack
